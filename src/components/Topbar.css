@@ -1,0 +1,103 @@
+/* components/Topbar.css */
+.topbar {
+  background: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 0;
+}
+
+.topbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form-select {
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background: var(--background-color);
+  color: var(--text-primary);
+  font-size: 14px;
+  min-width: 150px;
+}
+
+.modes {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mode-btn {
+  padding: 8px 16px;
+  border: 1px solid var(--border-color);
+  background: var(--background-color);
+  color: var(--text-primary);
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.mode-btn.active,
+.mode-btn:hover {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.synonyms {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.synonym-slider {
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--border-color);
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.synonym-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  cursor: pointer;
+}
+
+.slider-value {
+  font-weight: 600;
+  color: var(--text-primary);
+  min-width: 20px;
+}
+
+@media (max-width: 768px) {
+  .topbar-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .modes {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+}

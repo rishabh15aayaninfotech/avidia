@@ -1,0 +1,43 @@
+/* components/tools/AIDetector.css */
+.ai-detector-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 2rem;
+}
+
+.coming-soon-section {
+  text-align: center;
+}
+
+.coming-soon-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #667eea;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gif-container {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.coming-soon-gif {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.coming-soon-text {
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin: 0;
+}

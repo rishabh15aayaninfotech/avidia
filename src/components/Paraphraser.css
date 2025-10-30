@@ -1,0 +1,106 @@
+/* components/Paraphraser.css */
+.paraphraser {
+  flex: 1;
+  padding: 2rem;
+}
+
+.paraphraser-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-outline {
+  padding: 10px 20px;
+  border: 1px solid var(--primary-color);
+  background: transparent;
+  color: var(--primary-color);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.btn-outline:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.textareas-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.textarea-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.char-count {
+  font-size: 12px;
+}
+
+.copy-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+  background: var(--surface-color);
+  color: var(--text-primary);
+}
+
+.action-section {
+  text-align: center;
+}
+
+.paraphrase-btn {
+  padding: 14px 40px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .textareas-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .paraphraser {
+    padding: 1rem;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

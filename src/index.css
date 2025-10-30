@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.app.light {
+  background: #f9fafc;
+  color: #1c1c1c;
+}
+
+.app.dark {
+  background: #0f1115;
+  color: #f0f0f0;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  padding: 20px;
+  backdrop-filter: blur(12px);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.4s;
+}
+
+.sidebar.light {
+  background: rgba(255, 255, 255, 0.7);
+  color: #222;
+}
+
+.sidebar.dark {
+  background: rgba(20, 20, 20, 0.7);
+  color: #e0e0e0;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu li:hover,
+.menu li.active {
+  background: #00c389;
+  color: #fff;
+  transform: translateX(5px);
+}
+
+/* Main content */
+.main-content {
+  margin-left: 240px;
+  min-height: 100vh;
+  transition: 0.3s;
+}
+
+/* Topbar */
+.topbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  background: transparent;
+  backdrop-filter: blur(8px);
+}
+
+.mode-btn {
+  border: none;
+  background: #e6e6e6;
+  color: #222;
+  margin-right: 8px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.app.dark .mode-btn {
+  background: #1e1e1e;
+  color: #ddd;
+}
+
+.mode-btn:hover {
+  background: #00c389;
+  color: #fff;
+}
+
+/* Textarea */
+.modern-textarea {
+  width: 45%;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  resize: none;
+  transition: all 0.3s ease;
+}
+
+.app.dark .modern-textarea {
+  background: #1b1d22;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 12px rgba(0, 255, 204, 0.05);
+}
+
+.modern-textarea:focus {
+  border-color: #00c389;
+  box-shadow: 0 0 10px rgba(0, 195, 137, 0.3);
+}
+
+/* Paraphrase button */
+.modern-btn {
+  background: #00c389;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 40px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.modern-btn:hover {
+  background: #00a877;
+  box-shadow: 0 0 10px rgba(0, 195, 137, 0.4);
+}
+
+/* Theme toggle */
+.theme-toggle {
+  background: none;
+  border: 2px solid #00c389;
+  color: #00c389;
+  padding: 6px 10px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.theme-toggle:hover {
+  background: #00c389;
+  color: #fff;
+}
