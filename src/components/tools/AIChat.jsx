@@ -6,7 +6,7 @@ import "./AIChat.css";
 
 // API configuration
 const API_CONFIG = {
-  baseURL: 'http://192.168.1.26:9090',
+  baseURL: 'http://192.168.1.13:9090',
   endpoints: {
     ask: '/ollama/ask'
   }

@@ -16,16 +16,6 @@ body {
   color: #f0f0f0;
 }
 
-/* Sidebar */
-.sidebar {
-  width: 240px;
-  height: 100vh;
-  position: fixed;
-  padding: 20px;
-  backdrop-filter: blur(12px);
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  transition: 0.4s;
-}
 
 .sidebar.light {
   background: rgba(255, 255, 255, 0.7);

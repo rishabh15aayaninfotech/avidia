@@ -1,6 +1,6 @@
 /* components/Sidebar.css */
 .sidebar {
-  width: 280px;
+  width: 250px;
   background: var(--surface-color);
   border-right: 1px solid var(--border-color);
   display: flex;

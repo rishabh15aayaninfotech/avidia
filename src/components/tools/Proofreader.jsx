@@ -51,7 +51,7 @@ export default function Proofreader() {
     setIsProcessing(true);
 
     try {
-      const response = await fetch("http://192.168.1.26:9090/ai-proofreader", {
+      const response = await fetch("http://192.168.1.13:9090/ai-proofreader", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

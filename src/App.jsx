@@ -46,7 +46,7 @@ function App() {
   };
 
   const setActiveToolWithValidation = (toolId) => {
-    const validTools = ["editor", "proofreader", "templates", "history", "plagiarism", "ai-detector", "ai-chat","translate","ai-humanizer"];
+    const validTools = ["editor", "proofreader", "templates", "history", "plagiarism", "ai-detector", "ai-chat","translate","ai-humanizer","summarizer"];
     
     if (validTools.includes(toolId)) {
       setActiveTool(toolId);

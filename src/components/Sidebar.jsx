@@ -15,7 +15,8 @@ import {
   FaRobot,
   FaComments,
   FaLanguage,
-  FaMagic
+  FaMagic,
+  FaCompress
 } from "react-icons/fa";
 import "./Sidebar.css";
 import img1 from "./images/ai_logo.png";
@@ -28,6 +29,7 @@ export default function Sidebar() {
     { id: "translate", icon: <FaLanguage />, label: "Translate", premium: false },
     { id: "ai-humanizer", icon: <FaMagic />, label: "AI Humanizer", premium: false },
     { id: "proofreader", icon: <FaCheckDouble />, label: "Proofreader", premium: false },
+    { id: 'summarizer',icon: <FaCompress />, label: 'Summarizer',  path: '/summarizer' },
     { id: "editor", icon: <FaPenAlt />, label: "AI Editor", premium: false },
     { id: "plagiarism", icon: <FaSearch />, label: "Plagiarism Check", premium: false },
     { id: "ai-detector", icon: <FaShieldAlt />, label: "AI Detector", premium: false },

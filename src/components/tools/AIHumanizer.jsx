@@ -41,7 +41,7 @@ export default function AIHumanizer() {
     setIsProcessing(true);
 
     try {
-      const response = await fetch("http://192.168.1.26:9090/ai-humanize", {
+      const response = await fetch("http://192.168.1.13:9090/ai-humanize", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

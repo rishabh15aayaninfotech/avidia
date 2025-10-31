@@ -55,7 +55,7 @@ export default function Translate() {
         setIsTranslating(true);
 
         try {
-            const response = await fetch("http://192.168.1.26:9090/translate", {
+            const response = await fetch("http://192.168.1.13:9090/translate", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

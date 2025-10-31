@@ -11,6 +11,7 @@ import AIDetector from "./tools/AIDetector";
 import AIChat from "./tools/AIChat";
 import Translate from "./tools/Translate";
 import AIHumanizer from "./tools/AIHumanizer";
+import Summarizer from "./tools/Summarizer";
 import "./MainContent.css";
 
 export default function MainContent() {
@@ -28,6 +29,8 @@ export default function MainContent() {
         return <AIEditor />;
       case "proofreader":
         return <Proofreader />;
+      case "summarizer":
+        return <Summarizer />;
       case "templates":
         return <Templates />;
       case "history":
@@ -46,6 +49,7 @@ export default function MainContent() {
       "ai-chat": "AI Chat Assistant",
       "translate": "AI Translator",
       "ai-humanizer": "AI Humanizer",
+      "summarizer": "Text Summarizer",
       editor: "AI Content Editor",
       proofreader: "Proofreader",
       templates: "Content Templates",
@@ -65,6 +69,7 @@ export default function MainContent() {
             {/* <button className="btn btn-secondary">
               Export
             </button> */}
+            
             <button className="btn btn-primary">
               <span className="btn-icon">
                 <FaUser />
